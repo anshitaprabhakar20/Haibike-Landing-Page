@@ -1,0 +1,371 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#main{
+    width: 100%;
+    height: 100%;
+}
+#gradient{
+    position:absolute;
+    left: 43%;
+    width: 350px;
+    height: 140px;
+    background-image: radial-gradient(rgb(133, 133, 133) 0.1px,transparent 3px);
+    background-size: 10px 12px;
+}
+#nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 40px;
+}
+#nav>img{
+    margin-top: -3%;
+    width: 140px;
+    height: 130px;
+}
+#nav #right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#nav #right h3{
+    text-transform: uppercase;
+    font-family: "Gilroy";
+    font-size: 15px;
+}
+#nav #right img{
+    width: 40px;
+    height: 40px;
+}
+#content{
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+#content-left{
+    width: 60%;
+    height: 100%;
+}
+#content-left #redcircle {
+    position: absolute;
+    top: 24%;
+    left: 22%;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: rgba(252, 127, 127, 0.45) 0px 45px 30px -20px;
+    animation: red-cir 5s cubic-bezier(0.19, 1, 0.22, 1) infinite ;
+}
+#content-left #redcircle img{
+    width: 750px;
+    height: 510px;
+    margin-top: -20%;
+    margin-left: -60%;
+}
+#right-content{
+    width: 40%;
+    height: 100%;
+}
+#right-content>h1{
+    position: absolute;
+    top: 33%;
+    right: 17%;
+    font-size: 220px;
+    line-height: 300px;
+    letter-spacing: 10px;
+    color: rgba(196, 196, 196, 0.212);
+    transform: rotate(90deg);
+}
+#right-content h2{
+    position: absolute;
+    top: 22%;
+    right: 35%;
+    font-size: 220px;
+    line-height: 300px;
+    letter-spacing: 5px;
+    color: rgba(196, 196, 196, 0.193);
+    transform: rotate(90deg);
+}
+#right-content #txt{
+    position: relative;
+    position: absolute;
+    top: 40%;
+    right: 4%;
+    width: 450px;
+}
+#right-content #txt h1{
+    font-size: 45px;
+}
+#right-content #txt p{
+    font-size: 16px;
+}
+#right-content #txt #rect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 50px;
+}
+#right-content #txt #rect #more {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#right-content #txt #rect #more h3{
+    font-size: 16px;
+    color: rgb(244, 84, 137);
+}
+#right-content #txt #rect #more #more-cir{
+    width: 97px;
+    height: 65px;
+    border-radius: 50px;
+    background:linear-gradient(to left bottom,rgb(249, 4, 135),rgb(254, 66, 66));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#right-content #txt #rect #more #more-cir i{
+    color: white;
+    font-size: 20px;
+}
+#right-content #txt #rect #color{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#right-content #txt #rect #color h3{
+  font-size: 16px;
+}
+#right-content #txt #rect #color .box{
+    width: 45px;
+    height: 45px;
+    border-radius: 14px;
+    box-shadow: 1px 3px 10px black;
+    border: 10px solid white;
+    animation:color 2s cubic-bezier(0.19, 1, 0.22, 1)infinite both;
+}
+@keyframes color{
+    0%,100%{
+       background-color: yellow;
+    }
+    20%{
+        background-color: aqua;
+    }
+    40%{
+        background-color: crimson;
+    }
+    60%{
+        background-color:rgb(249, 4, 135) ;
+    }
+    80%{
+        background-color: coral;
+    }
+    
+}
+#dot{
+    width: 300px;
+    height: 100px;
+    margin-left: 10%;
+    background-image: radial-gradient(rgba(174, 171, 171, 0.799) 3px,transparent 3px);
+    background-size: 60px 60px;
+}
+#follow{
+    margin-left: 45%;
+    margin-top: 5%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+#follow i{
+    font-size: 25px;
+}
+#follow h4{
+    font-size: 12px;
+}
+#main #content #leftnav{
+    width: 80px;
+    height: 100%;
+}
+#main #content #leftnav i{
+    font-size: 25px;
+    margin-left: 40px;
+}
+#main #content #leftnav h2{
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 12px;
+}
+#main #content #leftnav h4{
+    margin-bottom: 40px;
+    margin-left: 20px;
+    transform: rotate(-90deg);
+}
+#main #content #leftnav h2:hover{
+    background:linear-gradient(to left bottom,rgb(249, 4, 135),rgb(254, 66, 66));
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    cursor: pointer;
+}
+#main #content #content-left #bottom-nav{
+    position: absolute;
+    bottom: 0%;
+    left: 7%;
+    width: 900px;
+    height: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#main #content #content-left #bottom-nav #l{
+    position: absolute;
+    left: 8%;
+    bottom: 25%;
+    font-size: 28px;
+}
+#main #content #content-left #bottom-nav #r{
+    position: absolute;
+    right: 16%;
+    bottom: 25%;
+    font-size: 28px;
+}
+#main #content #content-left #bottom-nav  .div1{
+    margin-top: 6%;
+    margin-left: 15%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(217, 181, 251);
+    display: inline-block;    
+}
+#main #content #content-left #bottom-nav  .div1:nth-child(2){
+    background-color: rgba(161, 251, 251, 0.885);
+}
+#main #content #content-left #bottom-nav  .div1:nth-child(3){
+    background-color:palegreen;
+}
+#main #content #content-left #bottom-nav .div1 img{
+    margin-top: -52%;
+    margin-left: -60%;
+    width:210px;
+    height: 180px;
+}
+@keyframes red-cir{
+    0%,100%{
+        border-radius: 50%;
+        transform: rotate(0deg);
+        background-color: pink;
+        
+    }
+    50%{
+        border-radius: 0%;
+        transform: rotate(360deg);
+        background:linear-gradient(to left bottom,rgb(249, 4, 135),rgb(254, 66, 66));
+        box-shadow: rgba(252, 127, 127, 0.45) 0px 45px 30px -20px; 
+    }
+}
+#main-cover{
+    position: absolute;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    animation:trans 10s infinite 2s both;
+}
+#main-cover #content-left #redcircle {
+    position: absolute;
+    top: 24%;
+    left: 22%;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: rgba(152, 152, 152, 0.826) 0px 45px 30px -20px;
+    animation: green-cir 5s cubic-bezier(0.19, 1, 0.22, 1) infinite ;
+}
+#main #main-cover #content #content-left #bottom-nav  .div1{
+    background-color: white;
+}
+#main #main-cover #right-content #txt #rect #more #more-cir{
+    width: 97px;
+    height: 65px;
+    border-radius: 50px;
+    background:linear-gradient(to left bottom,rgb(167, 249, 4),rgba(246, 250, 41, 0.901));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main #main-cover #content #leftnav h2:hover{
+    background:linear-gradient(to left bottom,rgb(167, 249, 4),rgba(246, 250, 41, 0.901));
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    cursor: pointer;
+}
+#main #main-cover #right-content #txt #rect #more h3{
+    font-size: 16px;
+    color: black;
+}
+#gradient2{
+    position:absolute;
+    left: 12%;
+    width: 350px;
+    height: 250px;
+    background-image: radial-gradient(rgba(255, 255, 0, 0.601) 4px,transparent 3px);
+    background-size: 90px 90px;
+}
+#main #main-cover #right-content #txt #rect #color .box{
+    width: 45px;
+    height: 45px;
+    border-radius: 14px;
+    box-shadow: 1px 3px 10px black;
+    border: 10px solid white;
+    animation:color2 2s cubic-bezier(0.19, 1, 0.22, 1)infinite both;
+}
+@keyframes green-cir{
+    0%,100%{
+        border-radius: 50%;
+        transform: rotate(0deg);
+        background-color: cyan; 
+    }
+    50%{
+        border-radius: 5
+        0%;
+        transform: rotate(360deg);
+        background:linear-gradient(to right top,rgb(2, 255, 2),rgba(255, 255, 0, 0.601));
+        box-shadow: rgb(217, 250, 168) 0px 45px 30px -20px; 
+    }
+}
+@keyframes color2{
+    0%,100%{
+       background-color:rgb(2, 255, 2);
+    }
+    20%{
+        background-color: aqua;
+    }
+    40%{
+        background-color: crimson;
+    }
+    60%{
+        background-color:rgb(249, 4, 135) ;
+    }
+    80%{
+        background-color: coral;
+    }
+}
+@keyframes trans{
+  0%,100%{
+    margin-top: -100%;
+  }
+  50%{
+    margin-top: 0%;
+  }
+}
